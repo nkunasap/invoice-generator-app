@@ -121,19 +121,14 @@ const { clientName, clientEmail, items, total, dueDate, isPaid, isRecurring, rec
 
 
 try {
-
-let invoice = await Invoice.findById(req.params.id);
-
-if (!invoice) {
-
-return res.status(404).json({ msg: 'Invoice not found' });
+   let invoice = await Invoice.findById(req.params.id);
+  if (!invoice) {
+  return res.status(404).json({ msg: 'Invoice not found' });
 
 // Check user
 
 if (invoice.user.toString() !== req.user.id) {
-
-return res.status(401).json({ msg: 'User not authorized' });
-
+ return res.status(401).json({ msg: 'User not authorized' });
 }
 
 invoice = await Invoice.findByIdAndUpdate(
@@ -159,29 +154,20 @@ exports.deleteInvoice = async (req, res) => {
 
 try {
     const invoice = await Invoice.findById(req.params.id);
-
 if (!invoice) {
-
 return res.status(404).json({ msg: 'Invoice not found' });
-
 }
 
 // Check user
 
 if (invoice.user.toString() !== req.user.id) {
-
 return res.status(401).json({ msg: 'User not authorized' });
-
 }
-
 await invoice.remove();
-
 res.json({ msg: 'Invoice removed' });
 
 } catch (err) {
-
 console.error(err.message);
 res.status(500).send('Server error');
-
 }
 };

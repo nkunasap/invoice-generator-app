@@ -7,7 +7,6 @@ const fonts = {
 Roboto: {
 
 normal: 'node_modules/roboto-font/fonts/Roboto/roboto-regular-webfont.ttf',
-
 bold: 'node_modules/roboto-font/fonts/Roboto/roboto-bold-webfont.ttf',
 
 italics: 'node_modules/roboto-font/fonts/Roboto/roboto-italic-webfont.ttf',
@@ -29,9 +28,7 @@ content: [
 { text: 'INVOICE', style: 'header' },
 
 `Invoice ID: ${invoice._id}`,
-
 `Client: ${invoice.clientName}`,
-
 `Total: $${invoice.total}`,
 `Due Date: ${invoice.dueDate.toLocaleDateString()}`
 
