@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Button, Typography } from '@mui/material';
-import api from 'invoice-generator-app.github.io/client/src/pages/services/api';
+import api from '/client/src/pages/services/api';
 
 const Dashboard = () => {
   const [invoices, setInvoices] = useState([]);

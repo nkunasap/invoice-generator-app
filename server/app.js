@@ -1,10 +1,10 @@
 const express = require('express');
-const connectDB = require('./config/db');
+const connectDB = require('./config/db.js');
 const cors = require('cors');
-const authRoutes = require('./routes/authRoutes');
-const invoiceRoutes = require('./routes/invoiceRoutes');
-const { protect } = require('./middleware/authMiddleware');
-const errorHandler = require('./middleware/errorMiddleware');
+const authRoutes = require('./routes/authRoutes.js');
+const invoiceRoutes = require('./routes/invoiceRoutes.js');
+const { protect } = require('./middleware/authMiddleware.js');
+const errorHandler = require('./middleware/errorMiddleware.js');
 const app = express();
 
 // Connect to database

@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { AuthProvider } from 'invoice-generator-app.github.io/client/src/pages/authContext';
-import PrivateRoute from 'invoice-generator-app.github.io/client/src/components/PrivateRoute';
-import Login from 'invoice-generator-app.github.io/client/src/pages/Login';
-import Register from 'invoice-generator-app.github.io/client/src/pages/Register';
-import Dashboard from 'invoice-generator-app.github.io/client/src/pages/Dashboard';
-import CreateInvoice from 'invoice-generator-app.github.io/client/src/pages/CreateInvoice';
-import Invoice from 'invoice-generator-app.github.io/client/src/pages/Invoice';
-import Navbar from 'invoice-generator-app.github.io/client/src/components/Navbar';
+import { AuthProvider } from '/client/src/pages/authContext';
+import PrivateRoute from '/client/src/components/PrivateRoute';
+import Login from '/client/src/pages/Login';
+import Register from '/client/src/pages/Register';
+import Dashboard from '/client/src/pages/Dashboard';
+import CreateInvoice from '/client/src/pages/CreateInvoice';
+import Invoice from '/client/src/pages/Invoice';
+import Navbar from '/client/src/components/Navbar';
 
 function App() {
 return (
