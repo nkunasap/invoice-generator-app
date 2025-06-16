@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Typography, Box, Button, CircularProgress } from '@mui/material';
-import api from '../services/api';
+import api from 'invoice-generator-app.github.io/client/src/pages/services/api';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import InvoicePDF from '../components/InvoicePDF'; // You'll need to create this
 
