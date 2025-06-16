@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const User = require('c:/Users/nkuna/OneDrive/Desktop/invii/server/models/user');
+const User = require('/server/models/user');
 exports.protect = async (req, res, next) => {
 
 let token;
