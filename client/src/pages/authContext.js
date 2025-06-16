@@ -21,7 +21,7 @@ if (token) {
 
 axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 
-const res = await axios.get('/api/auth/verify'); // We need to create this endpoint in the server
+const res = await axios.get('/api/auth/verify');
 
 setUser(res.data.user);
 
