@@ -1,6 +1,6 @@
 // server/services/recurringService.js
 const cron = require('node-cron');
-const Invoice = require('../models/Invoice');
+const Invoice = require('server/models/invoice.js');
 
 exports.setupRecurringInvoices = () => {
   // Run every day at midnight
