@@ -1,6 +1,6 @@
 const Invoice = require('server/models/invoice.js');
 
-const { sendInvoiceEmail } = require('../services/emailService');
+const { sendInvoiceEmail } = require('server/services/emailService.js');
 
 const { generatePDF } = require('../utils/pdfGenerator');
 
