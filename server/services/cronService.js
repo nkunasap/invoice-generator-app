@@ -1,5 +1,5 @@
 const cron = require('node-cron');
-const Invoice = require('c:/Users/nkuna/OneDrive/Desktop/invii/server/models/invoice');
+const Invoice = require('/server/models/invoice');
 const { sendInvoiceEmail } = require('./emailService');
 const { generatePDF } = require('../utils/pdfGenerator');
 
