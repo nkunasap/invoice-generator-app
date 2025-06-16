@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Container, TextField, Button, Typography, Box, Grid, MenuItem } from '@mui/material';
-import api from '../services/api';
+import api from 'invoice-generator-app.github.io/client/src/pages/services/api';
 
 const CreateInvoice = () => {
   const navigate = useNavigate();
