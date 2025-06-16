@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { TextField, Button, Container, Typography, Box } from '@mui/material';
-import api from '../services/api';
+import api from 'invoice-generator-app.github.io/client/src/pages/services/api';
 
 const Register = () => {
   const [formData, setFormData] = useState({ 
