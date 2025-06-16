@@ -1,12 +1,8 @@
-const Invoice = require('...models/invoice');
+const Invoice = require('server/models/invoice.js');
 
 const { sendInvoiceEmail } = require('../services/emailService');
 
 const { generatePDF } = require('../utils/pdfGenerator');
-
-// @desc    Create a new invoice
-
-// @route   POST /api/invoices
 
 exports.createInvoice = async (req, res) => {
 
