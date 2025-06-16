@@ -1,7 +1,7 @@
 const cron = require('node-cron');
-const Invoice = require('/server/models/invoice');
+const Invoice = require('/server/models/invoice.js');
 const { sendInvoiceEmail } = require('server/services/emailService.js');
-const { generatePDF } = require('../utils/pdfGenerator');
+const { generatePDF } = require('server/utils/pdfGenerator.js');
 
 // Run every day at midnight
 
